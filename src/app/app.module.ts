@@ -6,10 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { MenuComponent } from './menu/menu.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const myRoute:Routes= [
   {path:"",component:MainComponent},
   {path:"menu",component:MenuComponent},
+  {path:"signin",component:SignInComponent},
   
 ]
 
@@ -17,7 +19,8 @@ const myRoute:Routes= [
   declarations: [
     AppComponent,
     MainComponent,
-    MenuComponent
+    MenuComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

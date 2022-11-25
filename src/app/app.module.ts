@@ -13,6 +13,7 @@ const myRoute:Routes= [
   {path:"",component:MainComponent},
   {path:"menu",component:MenuComponent},
   {path:"signin",component:SignInComponent},
+  {path:"signup",component:SignupComponent},
   
 ]
 

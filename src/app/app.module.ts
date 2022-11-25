@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignupComponent } from './signup/signup.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes= [
   {path:"",component:MainComponent},
@@ -23,7 +24,8 @@ const myRoute:Routes= [
     MainComponent,
     MenuComponent,
     SignInComponent,
-    SignupComponent
+    SignupComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -5,16 +5,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { MenuComponent } from './menu/menu.component';
 
 const myRoute:Routes= [
   {path:"",component:MainComponent},
+  {path:"menu",component:MenuComponent},
   
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

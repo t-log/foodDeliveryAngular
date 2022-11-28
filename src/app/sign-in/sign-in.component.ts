@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent {
-
+  emailId=""
+  pwd=""
+  
+  signIn = () =>
+  {
+    let signInData = {"email":this.emailId,"pwd":this.pwd}
+    console.log(signInData)
+  }
 }

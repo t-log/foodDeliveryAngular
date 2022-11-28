@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
+  name=""
+  phno=""
+  email=""
+  pass=""
+  confirmPass=""
 
+  signUp = () =>
+  {
+    let signUpData:any = {"name":this.name,"phno":this.phno,"email":this.email,
+                          "pass":this.pass,"confirmPass":this.confirmPass}
+    console.log(signUpData)
+  }
 }

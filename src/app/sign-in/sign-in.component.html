@@ -1,18 +1,19 @@
 <div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+    <div class="row mt-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <table class="table">
+                <h3>Sign In</h3>
                 <tr>
                     <td>Email id: </td>
-                    <td><input type="email" class="form-control" name="" id=""></td>
+                    <td><input [(ngModel)]="emailId" type="email" class="form-control" name="emailId" id=""></td>
                 </tr>
                 <tr>
                     <td>Password: </td>
-                    <td><input type="password" class="form-control" name="" id=""></td>
+                    <td><input [(ngModel)]="pwd" type="password" class="form-control mt-2" name="pwd" id=""></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><button class="btn btn-success">Sign-In</button></td>
+                    <td><button (click)="signIn()" class="btn btn-primary mt-3">Sign-In</button></td>
                 </tr>
             </table>
         </div>
